@@ -1,5 +1,8 @@
 {
   "extends": "eslint-config-airbnb-es5",
+  "env": {
+    "jquery": true
+  },
   "rules": {
     "indent": ["error", 4],
     "curly": ["error", "all"]

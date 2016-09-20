@@ -5,10 +5,62 @@
     <title></title>
     <link rel="stylesheet" href="lib/bootstrap-3.3.6/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="styles.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+
     <script src="lib/jquery-3.1.0/jquery-3.1.0.min.js"></script>
     <script src="main.js"></script>
 </head>
 <body>
 
+<div class="container">
+    <div class="well center-block">
+        <div class="row hidden" id="weatherInformation">
+            <div class="col-md-12 col-xs-12">
+                <div class="row">
+                    <h1 id="place">Place goes here</h1>
+                </div>
+                <div class="row">
+                    <h4 id="weather">Weather goes here</h4>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-xs-6">
+                        <div class="row" id="containerTempC">
+                            <p id="tempC">temp C</p>
+                            <p id="feelsLikeC">feels like C</p>
+                        </div>
+                        <div class="row hidden" id="containerTempF">
+                            <p id="tempF">temp F</p>
+                            <p id="feelsLikeF">feels like F</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-4">
+                        <div class="btn-group" role="group">
+                            <button id="switchTempC" type="button" class="btn btn-default active">C</button>
+                            <button id="switchTempF" type="button" class="btn btn-default">F</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="placeInputRow">
+            <div class="row">
+                <h2>Local weather</h2>
+                <p>We are searching for the weather for your location. It takes just a few seconds.</p>
+                <p>If geolocation is disabled in your browser you can search your place below.</p>
+            </div>
+            <div class="row">
+                <form action="" id = "weatherByPlace">
+                    <div class="col-md-8 col-xs-12">
+                        <input class="form-control" type="text" id="placeInput" placeholder="Enter your place here" autofocus>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <button class="btn btn-default" type="Submit"  role=button id="submitPlace">Check weather</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

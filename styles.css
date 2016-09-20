@@ -1,0 +1,30 @@
+body {
+    background-color: black;
+    background-size: 100%;
+}
+
+.well {
+    width: 600px;
+    background-color: black;
+    opacity: 0.87;
+    padding: 30px 50px;
+    margin: 10% auto 15% auto;
+    border-width: 0;
+}
+
+.row{
+    padding: 5px;
+}
+
+p,h1,h2,h3,h4 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-size: 16px;
+}
+
+.btn-group {
+    vertical-align: middle;
+}
