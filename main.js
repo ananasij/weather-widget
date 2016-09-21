@@ -78,17 +78,18 @@ function showWeather(lat, long) {
 }
 
 function switchTempToC() {
-    $('#containerTempC').removeClass('hidden');
-    $('#containerTempF').addClass('hidden');
-    $('#switchTempF').removeClass('active');
-    $('#switchTempC').addClass('active');
+    switchTempUnit('C');
 }
 
 function switchTempToF() {
-    $('#containerTempF').removeClass('hidden');
-    $('#containerTempC').addClass('hidden');
-    $('#switchTempC').removeClass('active');
-    $('#switchTempF').addClass('active');
+    switchTempUnit('F');
+}
+
+function switchTempUnit(unit){
+    $('#containerTempF').toggleClass('hidden', unit !== 'F');
+    $('#containerTempC').toggleClass('hidden', unit !== 'C');
+    $('#switchTempC').toggleClass('active', unit === 'C');
+    $('#switchTempF').toggleClass('active', unit === 'F');
 }
 
 function setBackground(key) {
