@@ -1,6 +1,13 @@
+html,
+body {
+    height: 100%;
+}
+
 body {
     background-color: black;
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background-image 1s ease;
 }
 
 .well {
