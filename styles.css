@@ -11,7 +11,7 @@ body {
 }
 
 .well {
-    width: 600px;
+    max-width: 600px;
     background-color: black;
     opacity: 0.87;
     padding: 30px 50px;
